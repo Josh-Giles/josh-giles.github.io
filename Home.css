@@ -128,7 +128,6 @@ body {
 
 .footer{
     height:60px;
-    height:100%;
     margin-top:100px;
     background-color: #FF5F58;
     display: flex;
@@ -201,6 +200,10 @@ body {
 
     .footerContentContainer {
         width: 450px;
+    }
+
+    .footer{
+        height: 120px;
     }
 }
 
@@ -290,6 +293,4 @@ body {
     .headerSubText{
         font-size: 16px;
     }
-
-
 }
