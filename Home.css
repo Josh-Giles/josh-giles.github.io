@@ -128,7 +128,6 @@ body {
 
 .footer{
     height:60px;
-    height:100%;
     margin-top:100px;
     background-color: #FF5F58;
     display: flex;
@@ -140,9 +139,9 @@ body {
     padding: 10px 55px;
 }
 
-
 .footerContentContainer{
     display: flex;
+    height: 60px;
     width:800px;
     flex-flow: wrap;
     justify-content: space-between;
@@ -155,7 +154,6 @@ body {
     text-decoration: none;
 }
 
-
 .footerContentImage{
     display: flex;
     width:50px;
@@ -167,7 +165,6 @@ body {
     margin-left: 20px;
     word-wrap: anywhere;
 }
-
 
 @media(max-width:1440px){
     .headerTextContainer{
@@ -201,6 +198,14 @@ body {
 
     .footerContentContainer {
         width: 450px;
+    }
+
+    .footer{
+        height: 120px;
+    }
+
+    .footerContentContainer{
+        height: 120px;
     }
 }
 
@@ -290,6 +295,4 @@ body {
     .headerSubText{
         font-size: 16px;
     }
-
-
 }
