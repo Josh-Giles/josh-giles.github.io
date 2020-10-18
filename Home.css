@@ -152,6 +152,7 @@ body {
     align-self: center;
     color: #000000;
     text-decoration: none;
+    height:100%;
 }
 
 .footerContentImage{
@@ -202,6 +203,10 @@ body {
 
     .footer{
         height: 120px;
+    }
+
+    .footerLink{
+        height:50%;
     }
 
     .footerContentContainer{
