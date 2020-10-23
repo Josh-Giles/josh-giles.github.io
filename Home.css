@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500&display=swap&family=Archivo+Narrow:wght@400&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     padding:0;
     margin:0;
@@ -81,6 +85,15 @@ body {
     display: flex;
 }
 
+.sectionContainer--PinkBG{
+    background-color: #FF5F58;
+    margin-top:50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: column;
+    padding:25px 100px;
+}
+
 .sectionHeader{
     font-family: 'Archivo Black', sans-serif;
     color: #FF5F58;
@@ -89,6 +102,12 @@ body {
     font-style: italic;
     display: flex;
     flex-shrink: 1;
+}
+
+.sectionHeader--Blue{
+    color: #031424;
+    margin:0px;
+    letter-spacing: 10px;
 }
 
 .sectionImage{
@@ -113,17 +132,9 @@ body {
     margin:0;
 }
 
-.roundedSection{
-    background-color: #FF5F58;
-    width: 100%;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-}
-
-.roundedSectionText{
-    max-width:50%
+.sectionText--padding{
+    padding: 30px;
+    margin-top:0px;
 }
 
 .footer{
