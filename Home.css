@@ -54,7 +54,7 @@ body {
 }
 
 .navLink{
-    transition: transform 0.3s ease-in-out, color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
     font-family: 'Archivo', sans-serif;
     letter-spacing: 4px;
     color: #ffffff;
@@ -108,9 +108,16 @@ body {
 }
 
 .sectionHeader--Blue{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    letter-spacing: 20px;
+    font-style: italic;
+    display: flex;
+    flex-shrink: 1;
     color: #031424;
     margin:0px;
     letter-spacing: 10px;
+    word-break: break-word;
 }
 
 .sectionImage{
@@ -203,6 +210,16 @@ body {
         width: 28vw;
         height: 28vw;
     }
+
+    .sectionHeader--Blue{
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+
+    .sectionContainer--PinkBG{
+        padding: 20px 60px;
+    }
+        
 }
 
 
@@ -249,6 +266,10 @@ body {
     .headerTextContainer {
         top: 13vw;
     }
+    
+    .sectionText--padding {
+        padding: 0px;
+    }
 
     .sectionHeader{
         letter-spacing: 15px;
@@ -261,6 +282,10 @@ body {
     
     .headerTextContainer{
         top:25vw;
+    }
+
+    .sectionContainer--PinkBG {
+        padding: 20px;
     }
 }
 
@@ -280,6 +305,12 @@ body {
 
     .sectionHeader{
         letter-spacing: 10px;
+    }
+
+
+    .sectionHeader--Blue {
+        font-size: 27px;
+        letter-spacing: 4px;
     }
 
 }
