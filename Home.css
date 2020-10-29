@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500&display=swap&family=Archivo+Narrow:wght@400&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     padding:0;
     margin:0;
@@ -35,20 +39,25 @@ body {
 .headerNav{
     display: inline-flex;
     position: absolute;
-    top: 0;
-    left:0;
-    z-index:1;
+    top: 15px;
+    left: 30px;
+    z-index: 1;
+    justify-content: space-between;
+    width: 220px; 
+    flex-grow: 1;
 }
 
 .headerNav > a:hover{
-    border-bottom: 4px solid #FF5F58;
+    color:#FF5F58;
+    font-weight: 700;
+    transform: scale(1.15);
 }
 
 .navLink{
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
     font-family: 'Archivo', sans-serif;
     letter-spacing: 4px;
     color: #ffffff;
-    margin:15px 20px 0 20px;
     padding-bottom:5px;
     text-decoration: none;
     z-index: 2;
@@ -81,6 +90,13 @@ body {
     display: flex;
 }
 
+.sectionContainer--PinkBG{
+    background-color: #FF5F58;
+    margin-top:50px;
+    flex-direction: column;
+    padding:25px 100px;
+}
+
 .sectionHeader{
     font-family: 'Archivo Black', sans-serif;
     color: #FF5F58;
@@ -89,6 +105,19 @@ body {
     font-style: italic;
     display: flex;
     flex-shrink: 1;
+}
+
+.sectionHeader--Blue{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    letter-spacing: 20px;
+    font-style: italic;
+    display: flex;
+    flex-shrink: 1;
+    color: #031424;
+    margin:0px;
+    letter-spacing: 10px;
+    word-break: break-word;
 }
 
 .sectionImage{
@@ -113,17 +142,9 @@ body {
     margin:0;
 }
 
-.roundedSection{
-    background-color: #FF5F58;
-    width: 100%;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-}
-
-.roundedSectionText{
-    max-width:50%
+.sectionText--padding{
+    padding: 30px;
+    margin-top:0px;
 }
 
 .footer{
@@ -189,6 +210,16 @@ body {
         width: 28vw;
         height: 28vw;
     }
+
+    .sectionHeader--Blue{
+        font-size: 30px;
+        letter-spacing: 6px;
+    }
+
+    .sectionContainer--PinkBG{
+        padding: 20px 60px;
+    }
+        
 }
 
 
@@ -235,6 +266,10 @@ body {
     .headerTextContainer {
         top: 13vw;
     }
+    
+    .sectionText--padding {
+        padding: 0px;
+    }
 
     .sectionHeader{
         letter-spacing: 15px;
@@ -247,6 +282,10 @@ body {
     
     .headerTextContainer{
         top:25vw;
+    }
+
+    .sectionContainer--PinkBG {
+        padding: 20px;
     }
 }
 
@@ -266,6 +305,12 @@ body {
 
     .sectionHeader{
         letter-spacing: 10px;
+    }
+
+
+    .sectionHeader--Blue {
+        font-size: 29px;
+        letter-spacing: 3px;
     }
 
 }
