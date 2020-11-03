@@ -132,6 +132,15 @@ body {
 
 .sectiontextContainer{
     padding-left: 50px;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.8, transparent),color-stop(1, #4b4b4b));
+    max-height: 396px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.showAllContent{
+    max-height: none;
+    background-image: none;
 }
 
 .sectionText{
@@ -140,6 +149,16 @@ body {
     line-height: 32px;
     font-size: 18px;
     margin:0;
+    letter-spacing: 1px;
+    word-break: break-word;
+}
+
+.highlightText{
+    color: #FF5F58;
+}
+
+.highlightTextBlue{
+    color:#031424;
 }
 
 .sectionText--padding{
