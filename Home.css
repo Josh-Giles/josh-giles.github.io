@@ -63,6 +63,12 @@ body {
     z-index: 2;
 }
 
+.navLinkSelected{
+    color:#FF5F58;
+    font-weight: 700;
+    transform: scale(1.15);
+}
+
 .headerTextContainer{
     position: absolute;
     top: 10vw;
@@ -132,6 +138,12 @@ body {
 
 .sectiontextContainer{
     padding-left: 50px;
+    overflow: hidden;
+}
+
+.showAllContent{
+    max-height: none;
+    background-image: none;
 }
 
 .sectionText{
@@ -140,6 +152,16 @@ body {
     line-height: 32px;
     font-size: 18px;
     margin:0;
+    letter-spacing: 1px;
+    word-break: break-word;
+}
+
+.highlightText{
+    color: #FF5F58;
+}
+
+.highlightTextBlue{
+    color:#031424;
 }
 
 .sectionText--padding{
@@ -174,6 +196,7 @@ body {
     color: #000000;
     text-decoration: none;
     height:100%;
+    padding:0px 10px 0px 10px;
 }
 
 .footerContentImage{
@@ -228,21 +251,6 @@ body {
         top: 20vw;
     }
 
-    .footerContentContainer {
-        width: 100%;
-    }
-
-    .footer{
-        height: 120px;
-    }
-
-    .footerLink{
-        height:50%;
-    }
-
-    .footerContentContainer{
-        height: 120px;
-    }
 }
 
 @media(max-width:560px){
@@ -286,6 +294,20 @@ body {
 
     .sectionContainer--PinkBG {
         padding: 20px;
+    }
+
+    .footerContentContainer {
+        width: 100%;
+        height: 120px;
+        justify-content: center;
+    }
+
+    .footer{
+        height: 120px;
+    }
+
+    .footerLink{
+        height:50%;
     }
 }
 

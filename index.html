@@ -7,14 +7,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Josh Giles - Web Developer</title>
       <link rel="stylesheet" href="Home.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="Home.js"></script>
 </head>
 
 <body>
 
       <header class="headerContainer">
             <nav class="headerNav">
-                  <a class="navLink" href="#AboutMe">About Me</a>
-                  <a class="navLink" href="#">Timeline</a>
+                  <a class="navLink navLinkSelected" href="/index.html#AboutMe">About Me</a>
+                  <a class="navLink" href="/timeLine.html">Timeline</a>
             </nav>
 
             <picture>
@@ -41,14 +43,14 @@
                   <div class="sectiontextContainer">
                         <p class="sectionText">
                               <img class="sectionImage" src="PersonalSite/AboutMe.jpg" alt="About Me Image" />
-                              Hi, I’m Josh and I'm a software development apprentice from Swindon. I use modern CSS
+                              Hi, I’m <span class="highlightText">Josh</span> and I'm a <span class="highlightText">software development apprentice from Swindon</span>. I use modern CSS
                               techniques
-                              such as flexbox to create responsive websites. As i come from an e-commerce development
-                              background i have a focus on building clear and concise user experiences to guide users
+                              such as flexbox to create responsive websites. <span class="highlightText">As i come from an e-commerce development
+                              background i have a focus on building clear and concise user experiences</span> to guide users
                               through
                               systems. I have a passion for web development and enjoy all aspects of it from bug fixes
                               all the
-                              way to building new pages. I have worked as a web developer for 1 year but my passion for
+                              way to building new pages. <span class="highlightText">I have worked as a web developer for 1 year</span> but my passion for
                               building solutions with computers started early when I began to build python scripts to
                               perform
                               simple tasks and as time went on I found out about web development and discovered an
@@ -56,15 +58,15 @@
                               that.
                               <br />
                               <br />
-                              I currently work for T-Shirt Studio as a part of the team who maintain and develop the
+                              <span class="highlightText">I currently work for T-Shirt Studio</span> as a part of the team who <span class="highlightText">maintain and develop the
                               main
-                              e-commerce website and an administration website which allow other staff members to update
+                              e-commerce website and an administration website</span> which allow other staff members to update
                               the
                               products on our website. I work in both projects which means i have developed for and
                               worked in
-                              MVC as well as a windows form based environments. As a result i have extensive knowledge
-                              of HTML
-                              with Razor as well as XSLT and working with the output of XMLs
+                              MVC as well as a windows form based environments. As a result i have <span class="highlightText">extensive knowledge</span>
+                              of <span class="highlightText">HTML
+                              with Razor</span> as well as <span class="highlightText">XSLT and working with the output of XMLs.</span>
                         </p>
                   </div>
             </section>
@@ -96,6 +98,10 @@
                   <a href="https://github.com/Josh-Giles" class="footerLink" target="_blank">
                         <img class="footerContentImage" src="PersonalSite/Icons/SVG/BlackGitIcon.svg" alt="GitHub Logo">
                         <span class="footerContentText">@Josh-Giles</span>
+                  </a>
+                  <a href="#" class="footerLink">
+                        <img class="footerContentImage" src="PersonalSite/Icons/SVG/BlackMailIcon.svg" alt="Mail Logo">
+                        <span class="footerContentText">Contact Me</span>
                   </a>
             </section>
       </footer>
