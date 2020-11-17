@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500&display=swap&family=Archivo+Narrow:wght@400&display=swap');
+.timelineSection{
+    width:50%;
+    border-right: solid 5px #FF5F58;
+    height:300px;
+}
+
+.timelineCard{
+    width:80%;
+    background-color: #FF5F58;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timeLineHeader{
+    display: flex;
+    background-color: #031424;
+    color: #FF5F58;
+    text-align: center;
+    width:80%;
+    padding:20px;
+    font-family: 'Archivo', sans-serif;
+    color: #FF5F58;
+    letter-spacing: 4px;
+}

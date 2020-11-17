@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Josh Giles - Web Developer</title>
+      <link rel="stylesheet" href="Home.css">
+      <link rel="stylesheet" href="timeLine.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="Home.js"></script>
+</head>
+
+<body>
+
+      <header class="headerContainer">
+            <nav class="headerNav">
+                  <a class="navLink" href="/index.html#AboutMe">About Me</a>
+                  <a class="navLink" href="/timeLine.html">Timeline</a>
+            </nav>
+
+            <picture>
+                  <source media="(max-width:500px)" srcset="PersonalSite/HeaderImages/header-Small.jpg">
+                  <source media="(max-width:768px)" srcset="PersonalSite/HeaderImages/header-MedSml.jpg">
+                  <source media="(max-width:1024px)" srcset="PersonalSite/HeaderImages/header-Medium.jpg">
+                  <source media="(max-width:1440px)" srcset="PersonalSite/HeaderImages/header-MedLrg.jpg">
+                  <source media="(max-width:2560px)" srcset="PersonalSite/HeaderImages/header-Large.jpg">
+                  <img id="headerImage" class="headerImage" src="PersonalSite/HeaderImages/header-Large.jpg"
+                        alt="Header Photo" />
+            </picture>
+
+            <div id="headerTitle" class="headerTextContainer">
+                  <h1 class="headerText">Josh Giles</h1>
+                  <h2 class="headerSubText">Web Development Apprentice</h2>
+            </div>
+
+      </header>
+
+      <section class="gutters">
+            <h2 class="sectionHeader">Previous Employment</h2>
+
+            <!--Things on the left of timeline line-->
+            <div class="timelineSection">
+                  <div class=timelineCard>
+                        <h2 class=timeLineHeader>Mega Motorcycle Store</h2>
+                        <p class=timeLineCardtext>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies odio eu
+                              euismod efficitur. Quisque lacinia auctor semper. Cras lobortis turpis neque, eget
+                              accumsan dolor tincidunt in. Praesent sed mattis lorem, aliquam malesuada ligula. In hac
+                              habitasse platea dictumst. Aenean scelerisque nisl est Lorem ipsum dolor sit amet,
+                              consectetur adipiscing elit. Curabitur ultricies odio eu euismod efficitur. Quisque
+                              lacinia auctor semper. Cras lobortis turpis neque, eget accumsan dolor tincidunt in.
+                              Praesent sed mattis lorem, aliquam malesuada ligula. In hac habitasse platea dictumst.
+                              Aenean scelerisque nisl est
+                        </p>
+                  </div>
+            </div>
+
+            <!--Things on the right of timeline line-->
+
+      </section>
+
+
+
+      <footer class="footer">
+            <section class="footerContentContainer">
+                  <a href="https://github.com/Josh-Giles" class="footerLink" target="_blank">
+                        <img class="footerContentImage" src="PersonalSite/Icons/SVG/BlackGitIcon.svg" alt="GitHub Logo">
+                        <span class="footerContentText">@Josh-Giles</span>
+                  </a>
+                  <a href="mailto:email@joshgiles.co.uk" class="footerLink">
+                        <img class="footerContentImage" src="PersonalSite/Icons/SVG/BlackMailIcon.svg" alt="Mail Logo">
+                        <span class="footerContentText">email@joshgiles.co.uk</span>
+                  </a>
+            </section>
+      </footer>
+
+</body>
+
+</html>
