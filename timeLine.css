@@ -5,19 +5,20 @@
     
 }
 
-.timeLineBlock{
-    width:100%;
-    display:flex;
-    font-family: 'Archivo', sans-serif;
+.timeLinePage{
+    display: flex;
+    flex-direction: column;
 }
 
 .timelineSection{
-    padding: 3em 2em 2em;
+    padding: 3em 15px 3em 2em;
     color: white;
     font-family: 'Archivo', sans-serif;
     letter-spacing: 2px;
     position: relative;
     border-left: 2px solid grey;
+    max-width:1700px;
+    align-self: center;
 }
 
 /*Date Styling*/
@@ -31,7 +32,6 @@
     font-weight: 700;
     font-size: 18px;
     color: #ffffff;
-    border-bottom: 2px solid #FF5F58;
 }
 
 /*Dot styling*/
@@ -58,17 +58,16 @@
 }
 
 .timelineSection-InnerContent{
-    padding-left: 20px;
+    padding-left: 5%;
 }
 
 .timelineSection-Title{
     margin-top: 0;
     color: #FF5F58;
     font-size: 20px;
-    font-weight: 400;
 }
 
 .timelineSection-Description{
     font-size: 16px;
-    padding-left: 25px;
+    padding-left: 5%;
 }
