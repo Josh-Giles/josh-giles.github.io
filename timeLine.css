@@ -32,6 +32,7 @@
     font-weight: 700;
     font-size: 18px;
     color: #ffffff;
+    letter-spacing: 3.5px;
 }
 
 /*Dot styling*/
@@ -65,6 +66,8 @@
     margin-top: 0;
     color: #FF5F58;
     font-size: 20px;
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
 }
 
 .timelineSection-Description{
