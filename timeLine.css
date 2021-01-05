@@ -49,15 +49,6 @@
     background: #FF5F58;
 }
 
-/*Fade out last item*/
-.timelineSection:last-child {
-    border-image: linear-gradient(
-        to bottom,
-        grey,
-        rgba(grey, 0)) 1 100%
-    ;
-}
-
 .timelineSection-InnerContent{
     padding-left: 5%;
 }
@@ -84,4 +75,10 @@
 
 .timelineLink:hover{
     text-decoration: underline;
+}
+
+@media(max-width:450px){
+    .timelineSection-InnerContent{
+        margin-top:15px;
+    }
 }
