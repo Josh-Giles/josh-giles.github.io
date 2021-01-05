@@ -2,33 +2,75 @@
 .timeLineSection{
     width:100%;
     display: flex;
-    justify-content: space-between;
+    
 }
 
-.timelineCard{
-    width:40%;
-    background-color: #FF5F58;
+.timeLinePage{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px 0px 20px 0px;
 }
 
-.timeLineHeader{
-    background-color: #031424;
-    width:85%;
-    text-align: center;
-    padding:20px 0px 20px 0px;
+.timelineSection{
+    padding: 3em 15px 3em 2em;
+    color: white;
     font-family: 'Archivo', sans-serif;
-    color: #FF5F58;
-    letter-spacing: 4px;
-    margin: 0;
-}
-.timeLineCardtext{
-    width: 85%;
+    letter-spacing: 2px;
+    position: relative;
+    border-left: 2px solid grey;
+    max-width:1700px;
+    align-self: center;
 }
 
-.timeLineDivider{
-    width:5px;
-    background-color: #FF5F58;
+/*Date Styling*/
+.timelineSection::before {
+    content: attr(attr-employmentdate);
+    position: absolute;
+    left: 1.75em;
+    font-weight: bold;
+    top: 1em;
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 3.5px;
+}
+
+/*Dot styling*/
+.timelineSection::after {
+    width: 20px;
+    height: 20px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -12px;
+    border-radius: 50%;
+    content: '';
+    border: 2px solid #031424;
+    background: #FF5F58;
+}
+
+/*Fade out last item*/
+.timelineSection:last-child {
+    border-image: linear-gradient(
+        to bottom,
+        grey,
+        rgba(grey, 0)) 1 100%
+    ;
+}
+
+.timelineSection-InnerContent{
+    padding-left: 5%;
+}
+
+.timelineSection-Title{
+    margin-top: 0;
+    color: #FF5F58;
+    font-size: 20px;
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
+}
+
+.timelineSection-Description{
+    font-size: 16px;
+    padding-left: 5%;
 }
