@@ -77,6 +77,10 @@
     text-decoration: underline;
 }
 
+.highlightText{
+    color: #FF5F58;
+}
+
 @media(max-width:450px){
     .timelineSection-InnerContent{
         margin-top:15px;
